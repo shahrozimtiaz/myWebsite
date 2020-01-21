@@ -1,0 +1,103 @@
+{% extends "myWebsite/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<main role="main" class="container" style=" margin: 0 auto; padding-top:15px">
+  <div class="row shadow p-3 mb-5 rounded" style=" margin: 0 auto;background:rgb(249, 250, 248);">
+    <div class="col-md-8" style=" margin: 0 auto;">
+      <!--Section: Contact v.2-->
+      <section class="mb-4" style=" margin: 0 auto;">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me.</p>
+
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control" placeholder="Your email">
+                  </div>
+                </div>
+                <!--Grid column-->
+
+              </div><br>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                  </div>
+                </div>
+              </div><br>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message"></textarea>
+                  </div>
+
+                </div>
+              </div><br>
+              <!--Grid row-->
+
+            </form>
+
+
+            <div class="status"></div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li><i class="fa fa-map-marker fa-2x"></i>
+                <p>Leesburg, VA</p>
+              </li>
+
+              <li><i class="fa fa-phone fa-2x"></i>
+                <p>571-420-5607</p>
+              </li>
+
+              <li><i class="fa fa-envelope fa-2x"></i>
+                <p>shahrozimtiaz07@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+        </div>
+
+      </section>
+      <div class="text-center text-md-center" style="padding-bottom:15px;">
+        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+      </div>
+    </div>
+  </div>
+</main>
+<!--Section: Contact v.2-->
+{% endblock %}
