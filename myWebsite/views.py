@@ -49,5 +49,8 @@ def contact(request):
         email_sender = emailSender('shahrozautomation@gmail.com', 'automation123')
         email_sender.sendMessage('shahrozimtiaz07@gmail.com', 'Automated Personal Website Message From {}'.format(request.POST.get('name')),'Email: {} \nName: {} \nSubject: {} \nMessage: {}'.format(request.POST.get('email'),request.POST.get('name'), request.POST.get('subject'),request.POST.get('message')))
         email_sender.close()
-        return redirect(reverse('myWebsite:home'))
+        return redirect(reverse('myWebsite:sent'))
     return render(request, 'myWebsite/contact.html')
+
+def sent(request):
+    return render(request, 'myWebsite/sent.html')

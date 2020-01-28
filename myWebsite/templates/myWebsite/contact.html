@@ -26,7 +26,7 @@
                                 <!--Grid column-->
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required />
                                     </div>
                                 </div>
                                 <!--Grid column-->
@@ -34,7 +34,7 @@
                                 <!--Grid column-->
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control" placeholder="Your email">
+                                        <input type="text" id="email" name="email" class="form-control" placeholder="Your email" required />
                                     </div>
                                 </div>
                                 <!--Grid column-->
@@ -46,7 +46,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
                                     </div>
                                 </div>
                             </div><br>
@@ -59,12 +59,15 @@
                                 <div class="col-md-12">
 
                                     <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message"></textarea>
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message" required></textarea>
                                     </div>
 
                                 </div>
                             </div><br>
                             <!--Grid row-->
+                            <div class="text-center text-md-center" style="padding-bottom:15px;">
+                                <input class="btn btn-primary" type="submit" value="Send">
+                            </div>
 
                         </form>
 
@@ -94,9 +97,6 @@
                 </div>
 
             </section>
-            <div class="text-center text-md-center" style="padding-bottom:15px;">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
         </div>
     </div>
 </main>
