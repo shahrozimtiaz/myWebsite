@@ -47,7 +47,7 @@ def courseWork(request):
 def contact(request):
     if request.POST:
         email_sender = emailSender('shahrozautomation@gmail.com', 'automation123')
-        email_sender.sendMessage('shahrozimtiaz07@gmail.com', 'Automated Personal Website Message From {}'.format(request.POST.get('name')),'Email: {} \nName: {} \nSubject: {} \nMessage: {}'.format(request.POST.get('email'),request.POST.get('name'), request.POST.get('subject'),request.POST.get('message')))
+        email_sender.sendMessage('shahrozimtiaz07@gmail.com', request.POST.get('subject'),'Automated Personal Website Message:\nEmail: {} \nName: {} \nSubject: {} \nMessage: {}'.format(request.POST.get('email'),request.POST.get('name'), request.POST.get('subject'),request.POST.get('message')))
         email_sender.close()
         return redirect(reverse('myWebsite:sent'))
     return render(request, 'myWebsite/contact.html')
