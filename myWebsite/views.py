@@ -36,6 +36,11 @@ class emailSender:
         print("Good bye")
 
 def home(request):
+    if request.POST:
+        email_sender = emailSender('shahrozautomation@gmail.com', 'automation123')
+        email_sender.sendMessage('shahrozimtiaz07@gmail.com', request.POST.get('subject'),'Automated Personal Website Message:\nEmail: {} \nName: {} \nSubject: {} \nMessage: {}'.format(request.POST.get('email'),request.POST.get('name'), request.POST.get('subject'),request.POST.get('message')))
+        email_sender.close()
+        return redirect(reverse('myWebsite:sent'))
     return render(request, 'myWebsite/home.html')
 
 def projects(request):
@@ -45,11 +50,6 @@ def courseWork(request):
     return render(request, 'myWebsite/courseWork.html')
 
 def contact(request):
-    if request.POST:
-        email_sender = emailSender('shahrozautomation@gmail.com', 'automation123')
-        email_sender.sendMessage('shahrozimtiaz07@gmail.com', request.POST.get('subject'),'Automated Personal Website Message:\nEmail: {} \nName: {} \nSubject: {} \nMessage: {}'.format(request.POST.get('email'),request.POST.get('name'), request.POST.get('subject'),request.POST.get('message')))
-        email_sender.close()
-        return redirect(reverse('myWebsite:sent'))
     return render(request, 'myWebsite/contact.html')
 
 def sent(request):
