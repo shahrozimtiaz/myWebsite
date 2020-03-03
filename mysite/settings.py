@@ -126,6 +126,7 @@ STATIC_URL = 'myWebsite/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'staticfiles/myWebsite'),
     os.path.join(BASE_DIR, 'static/myWebsite'),
     os.path.join(BASE_DIR, 'myWebsite/static/myWebsite'),
 )
