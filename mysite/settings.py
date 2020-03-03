@@ -27,6 +27,8 @@ SECRET_KEY = 'wt@c#zb#i+@$y5f2)vohj+&=*f(3e7e)_4tgo)c__%bbdy4@g_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+DEBUG_PROPAGATE_EXCEPTIONS = True
+
 ALLOWED_HOSTS = ['*']
 
 
@@ -129,7 +131,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
