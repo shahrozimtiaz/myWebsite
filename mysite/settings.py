@@ -123,3 +123,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+EMAIL_FILE_PATH = ''
+EMAIL_HOST_USER = 'shahrozautomation@gmail.com'
+EMAIL_HOST_PASSWORD = 'automation123'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

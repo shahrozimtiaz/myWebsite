@@ -1,0 +1,15 @@
+{% extends "myWebsite/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="card shadow p-3 mb-5 rounded" style="max-width: 18rem; margin:auto;">
+  <div class="card-body">
+    <h5 class="card-title">Apologizes!</h5>
+    <p class="card-text">Something went wrong. Please email me your message, which I've put at the bottom for convenience!</p>
+    <a href="{% url 'myWebsite:home' %}" class="btn btn-primary">Home</a>
+  </div>
+</div>
+<h3>Message: <h5></h5></h3>
+
+{% endblock %}
