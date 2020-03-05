@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f1e5ed2-6e9d-4e2c-bdbe-7c1c99d5abe9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myWebsite/templates/myWebsite/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/myWebsite/templates/myWebsite/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myWebsite/templates/myWebsite/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/myWebsite/templates/myWebsite/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,14 +44,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="56" />
-          <entry key="html" value="3266" />
+          <entry key="html" value="3273" />
           <entry key="py" value="1025" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="56" />
-          <entry key="HTML" value="3266" />
+          <entry key="HTML" value="3273" />
           <entry key="Python" value="1025" />
         </counts>
       </usages-collector>
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myWebsite/templates/myWebsite/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+            <state relative-caret-position="1110">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myWebsite/templates/myWebsite/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="127" selection-start-line="9" selection-start-column="127" selection-end-line="9" selection-end-column="127" />
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
@@ -156,6 +156,7 @@
       <find>weigh</find>
       <find>gpi</find>
       <find>shah</find>
+      <find>inline</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,8 +176,8 @@
         <option value="$PROJECT_DIR$/myWebsite/templates/myWebsite/failed.html" />
         <option value="$PROJECT_DIR$/myWebsite/urls.py" />
         <option value="$PROJECT_DIR$/myWebsite/views.py" />
-        <option value="$PROJECT_DIR$/myWebsite/templates/myWebsite/home.html" />
         <option value="$PROJECT_DIR$/myWebsite/templates/myWebsite/base.html" />
+        <option value="$PROJECT_DIR$/myWebsite/templates/myWebsite/home.html" />
       </list>
     </option>
   </component>
@@ -402,10 +403,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myWebsite/templates/myWebsite/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myWebsite/templates/myWebsite/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="127" selection-start-line="9" selection-start-column="127" selection-end-line="9" selection-end-column="127" />
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
@@ -418,18 +431,6 @@
             <element signature="n#style#0;n#div#0;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myWebsite/templates/myWebsite/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#2;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
